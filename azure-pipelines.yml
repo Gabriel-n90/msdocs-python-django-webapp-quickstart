@@ -17,6 +17,7 @@ strategy:
     Python39:
       PYTHON_VERSION: '3.9'
   maxParallel: 3
+
 jobs:
 - job: RunTests
   displayName: 'Run Tests'
@@ -39,8 +40,8 @@ jobs:
         if not manage_py:
             raise SystemExit('Could not find a Django project')
         project_location = path.dirname(path.abspath(manage_py))
-        print('Found Django project in', project_location)
-        print('##vso[task.setvariable variable=projectRoot]{}'.format(project_location))
+        echo 'Found Django project in $(project_location)'
+        echo '##vso[task.setvariable variable=projectRoot]$(project_location)'
 
   - script: |
       python -m pip install --upgrade pip setuptools wheel
