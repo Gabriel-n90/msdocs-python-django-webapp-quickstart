@@ -8,54 +8,52 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+strategy:
+  matrix:
+    Python37:
+      PYTHON_VERSION: '3.7'
+    Python38:
+      PYTHON_VERSION: '3.8'
+    Python39:
+      PYTHON_VERSION: '3.9'
+  maxParallel: 3
 
-jobs:
-- job: RunTests
-  displayName: 'Run Tests'
-  strategy:
-    matrix:
-      Python37:
-        PYTHON_VERSION: '3.7'
-      Python38:
-        PYTHON_VERSION: '3.8'
-      Python39:
-        PYTHON_VERSION: '3.9'
-  steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(PYTHON_VERSION)'
-      addToPath: true
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(PYTHON_VERSION)'
+    architecture: 'x64'
 
-  - script: |
-      python -m pip install --upgrade pip setuptools wheel
-      pip install Django
-      pip install -r requirements.txt
-      pip install unittest-xml-reporting
-    displayName: 'Install prerequisites'
+- task: PythonScript@0
+  displayName: 'Export project path'
+  inputs:
+    scriptSource: 'inline'
+    script: |
+      """Search all subdirectories for `manage.py`."""
+      from glob import iglob
+      from os import path
+      # Python >= 3.7
+      manage_py = next(iglob(path.join('**', 'manage.py'), recursive=True), None)
+      if not manage_py:
+          raise SystemExit('Could not find a Django project')
+      project_location = path.dirname(path.abspath(manage_py))
+      print('Found Django project in', project_location)
+      print('##vso[task.setvariable variable=projectRoot]{}'.format(project_location))
 
-  - script: |
-      python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
-    displayName: 'Run tests'
+- script: |
+    python -m pip install --upgrade pip setuptools wheel
+    pip install Django
+    pip install -r requirements.txt
+    pip install unittest-xml-reporting
+  displayName: 'Install prerequisites'
 
-  - task: PublishTestResults@2
-    inputs:
-      testResultsFiles: "**/TEST-*.xml"
-      testRunTitle: 'Python $(PYTHON_VERSION)'
-    condition: succeededOrFailed()
+- script: |
+    pushd '$(projectRoot)'
+    python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
+  displayName: 'Run tests'
 
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      artifactName: 'drop'
-      publishLocation: 'Container'
-
-- job: DeployToAzure
-  displayName: 'Deploy to Azure'
-  dependsOn: RunTests
-  condition: succeeded()
-  steps:
-  - task: AzureWebApp@1
-    inputs:
-      azureSubscription: 'django' 
-      appName: 'COM769-Python-Django-B00575451'
-      package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: "**/TEST-*.xml"
+    testRunTitle: 'Python $(PYTHON_VERSION)'
+  condition: succeededOrFailed()
