@@ -1,5 +1,5 @@
 from django.test import TestCase
-from COM769-Python-Django-B00575451.models import MyModel
+from hello_azure.models import MyModel
 
 class MyModelTestCase(TestCase):
     def test_model_creation(self):
