@@ -1,5 +1,5 @@
 from django.test import TestCase
-from COM769-Python-Django-B00575451.forms import MyForm  # Replace 'myapp' with the actual name of your app
+from hello_azure.forms import MyForm  # Replace 'myapp' with the actual name of your app
 
 class FormsTestCase(TestCase):
     def test_valid_form(self):
