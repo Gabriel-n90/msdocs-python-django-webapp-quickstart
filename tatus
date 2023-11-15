@@ -1,0 +1,267 @@
+[33mcommit 18e378c3b1c340490e4178fc4535048fc969c5dc[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:43:32 2023 +0000
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 6cd54983082887e7d83f645e2930641c47f53f9f[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:38:01 2023 +0000
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit f7ab1a80b443faef526a8f4f6e5edb1c94c576bf[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:34:58 2023 +0000
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit 289b6de9f56c675aec437ce5ce7a8b1f8d902c5e[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:32:06 2023 +0000
+
+    Update azure-pipelines.yml for Azure Pipelines
+
+[33mcommit f16da5c1a847b89d8ddcdf894217cdd778917549[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:26:46 2023 +0000
+
+    Set up CI with Azure Pipelines
+    
+    [skip ci]
+
+[33mcommit 3cdc0250acfa9b6d3b4a09a7e4fcd6307fa9a8cd[m
+Author: Gabriel-n90 <149002075+Gabriel-n90@users.noreply.github.com>
+Date:   Wed Nov 15 00:18:55 2023 +0000
+
+    Add or update the Azure App Service build and deployment workflow config
+
+[33mcommit 9feee71a4bb077661d4c374b0ccdaa751761e3d5[m
+Merge: 3ef7927 0adbe25
+Author: Dina Berry <diberry@microsoft.com>
+Date:   Thu Sep 28 13:50:56 2023 -0700
+
+    Merge pull request #19 from JimacoMS4/add-whitenoise-to-dev
+    
+    Move whitenoise config to development settings
+
+[33mcommit 0adbe25327a400a272b166a01d9b28e110c97cdd[m
+Author: JimacoMS4 <84105740+JimacoMS4@users.noreply.github.com>
+Date:   Thu Sep 28 11:40:48 2023 -0700
+
+    add staticfiles directory to .gitignore
+
+[33mcommit 890c9158aa42038c586ff0ae8657f6ded799dbf8[m
+Author: Jimaco Brannian <84105740+JimacoMS4@users.noreply.github.com>
+Date:   Thu Sep 28 10:16:13 2023 -0700
+
+    Update quickstartproject/settings.py per Pamela suggestion
+    
+    Co-authored-by: Pamela Fox <pamela.fox@gmail.com>
+
+[33mcommit 5bc5a637ab60c465747b187d85ebbc283ea900e0[m
+Author: JimacoMS4 <84105740+JimacoMS4@users.noreply.github.com>
+Date:   Wed Sep 27 10:51:51 2023 -0700
+
+    Move whitenoise config to development settings
+
+[33mcommit 3ef7927cd5feb5c1b1d4c30ae1a88fe2fabeb2c6[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Tue Jun 20 12:59:31 2023 +0200
+
+    Create .gitattributes
+
+[33mcommit a5e39f1542247de2a8b203ccd284c34fe6976362[m
+Merge: f2e75ac 7b9451a
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Fri Jun 16 15:44:33 2023 +0200
+
+    Merge pull request #14 from vmagelo/fixes
+    
+    Fix static files implementation.
+
+[33mcommit 7b9451a2026b7b3ecc94d2482522be0a4e99d9f7[m
+Author: vmagelo <v-gelorminom@microsoft.com>
+Date:   Fri Jun 16 15:37:52 2023 +0200
+
+    Fix static files implementation.
+
+[33mcommit f2e75ac2c5aca6f09b704b485a332a828f8f66aa[m
+Merge: c4aa27b 4e917ba
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Wed Jun 14 18:17:52 2023 +0200
+
+    Merge pull request #6 from jfmatth/fix/addDebugtoProduction
+    
+    no debug in production
+
+[33mcommit 4e917baaebba91f7fa49653beb03d2f0ddfbb1ce[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Wed Jun 14 18:17:46 2023 +0200
+
+    Update quickstartproject/production.py
+    
+    Co-authored-by: Pamela Fox <pamela.fox@gmail.com>
+
+[33mcommit c4aa27b068cdb9ddd292934f39b65deee6d558c8[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Tue Apr 4 19:47:28 2023 +0200
+
+    Update README.md
+
+[33mcommit 7aebdec2beb1c82738e7555f043f8a686a664760[m
+Author: Dina Berry <diberry@microsoft.com>
+Date:   Thu Mar 23 14:16:37 2023 -0700
+
+    Update settings.py
+
+[33mcommit 86f9a4d2bbaaae74bae747ede28717971892ffe8[m
+Merge: 6e0e6e2 090ee69
+Author: Dina Berry <diberry@microsoft.com>
+Date:   Thu Mar 23 11:15:19 2023 -0700
+
+    Merge pull request #9 from diberry/main
+    
+    get rid of secret
+
+[33mcommit 090ee69b451d244d6f1fef4f63fd079c74277dc2[m
+Author: Dina Berry (SHE/HER) <Dina.Berry@microsoft.com>
+Date:   Thu Mar 23 11:09:47 2023 -0700
+
+    edit
+
+[33mcommit 679dbd2acdd95d9df3f6628aa50c16689d265e46[m
+Author: Dina Berry (SHE/HER) <Dina.Berry@microsoft.com>
+Date:   Thu Mar 23 11:03:59 2023 -0700
+
+    reword readme
+
+[33mcommit be71729641eb1be433b490de101b969954c98847[m
+Author: Dina Berry (SHE/HER) <Dina.Berry@microsoft.com>
+Date:   Thu Mar 23 10:51:50 2023 -0700
+
+    get rid of secret
+
+[33mcommit a6fd84806155b044c6e0f403907b4f43accd0283[m
+Author: John Matthew <john@compunique.com>
+Date:   Mon Aug 22 11:49:53 2022 -0700
+
+    no debug in production
+
+[33mcommit 6e0e6e24343bb826b37e2a79e2479261df031d3a[m
+Merge: ed40894 8732e05
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Mar 21 17:58:09 2022 +0100
+
+    Merge pull request #4 from vmagelo/favicon
+    
+    Favicon
+
+[33mcommit 8732e0518119a2f6a1e80bade98e86571d86a29f[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Mar 21 17:51:29 2022 +0100
+
+    Add favicon link.
+
+[33mcommit 2dbcadfbe679908e34432b6d639a8a092ab3ce51[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Mar 21 17:07:55 2022 +0100
+
+    Remove !!
+
+[33mcommit 2a6124484216dff460035f8c510312425fcf0e4f[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Mar 21 17:03:06 2022 +0100
+
+    Add favicon.
+
+[33mcommit ed408946216aae57d264f12d3cfeae3181ec4d9d[m
+Merge: 10ea918 fbcc58f
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Mar 7 09:25:16 2022 +0100
+
+    Merge pull request #2 from vmagelo/patch-1
+    
+    Typo.
+
+[33mcommit fbcc58f858b76bb1255e42876831cda8ada191f6[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Thu Feb 10 16:18:42 2022 +0100
+
+    Typo.
+
+[33mcommit 10ea918c191ec040000e1558d30a89e0a7ad9b28[m
+Author: David Berry <dberry83702@yahoo.com>
+Date:   Mon Jan 31 00:27:32 2022 -0600
+
+    Update readme file for article deployment
+
+[33mcommit ac0f15dde64fe987743d0c1e8f23f422e3b3c8a2[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:52:59 2022 +0100
+
+    sm
+
+[33mcommit 332776c8188ae7bc54c798754f0066ab63c1c870[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:49:08 2022 +0100
+
+    SM
+
+[33mcommit a7b64d9d07b7d4a055da31c819549112f4bea151[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:48:11 2022 +0100
+
+    sm
+
+[33mcommit 4c03b0daf2c30b0f5c31a6d503cc346f2aeb8571[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:45:10 2022 +0100
+
+    sm
+
+[33mcommit 50f74b52669f85a865800f9ae2b4587ff81a3b93[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:44:34 2022 +0100
+
+    sm
+
+[33mcommit 539eb103e74157bebd6d004a7f8ac7493bb97c82[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:41:48 2022 +0100
+
+    Small change.
+
+[33mcommit b39ce9086747804a70e1c05120b830e7d082aecb[m
+Author: vmagelo <51368918+vmagelo@users.noreply.github.com>
+Date:   Mon Jan 24 15:16:02 2022 +0100
+
+    Small change.
+
+[33mcommit e013662aff20e4f90f5ccce231729ce041348f94[m
+Author: David Berry <dberry83702@yahoo.com>
+Date:   Tue Jan 18 18:14:37 2022 -0600
+
+    Code cleanup
+
+[33mcommit 1d26e0cf3ce3e080e9a0d63741092eddddfe542b[m
+Merge: 3c89350 5fa1749
+Author: David Berry <dberry83702@yahoo.com>
+Date:   Tue Jan 18 17:33:49 2022 -0600
+
+    Merge pull request #1 from charris-msft/main
+    
+    DisallowedHost fix - wsgi.py update
+
+[33mcommit 5fa174960c25a8a898f81d4ab95360af3818c738[m
+Author: Chris Harris <charris@microsoft.com>
+Date:   Tue Jan 18 14:22:26 2022 -0800
+
+    wsgi.py change fixes the initial problem
+    views.py change fixes the subsequent csrf issue
+
+[33mcommit 3c893500deb66d0f49aed135e62c09ec09912639[m
+Author: David Berry <dberry83702@yahoo.com>
+Date:   Tue Jan 18 10:36:35 2022 -0600
+
+    Django serve 
