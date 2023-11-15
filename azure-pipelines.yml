@@ -53,3 +53,9 @@ jobs:
       azureSubscription: 'django' 
       appName: 'COM769-Python-Django-B00575451'
       package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'drop'
+      publishLocation: 'Container'
