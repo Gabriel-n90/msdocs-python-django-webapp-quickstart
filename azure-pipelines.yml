@@ -51,5 +51,5 @@ jobs:
   - task: AzureWebApp@1
     inputs:
       azureSubscription: 'django'
-      appName: 'COM769PythonDjango'
+      appName: 'COM769-Python-Django-B00575451'
       package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
