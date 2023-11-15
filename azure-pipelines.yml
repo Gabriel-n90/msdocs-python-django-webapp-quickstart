@@ -43,6 +43,12 @@ jobs:
       testRunTitle: 'Python $(PYTHON_VERSION)'
     condition: succeededOrFailed()
 
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      artifactName: 'drop'
+      publishLocation: 'Container'
+
 - job: DeployToAzure
   displayName: 'Deploy to Azure'
   dependsOn: RunTests
@@ -53,9 +59,3 @@ jobs:
       azureSubscription: 'django' 
       appName: 'COM769-Python-Django-B00575451'
       package: '$(Build.ArtifactStagingDirectory)/**/*.zip'
-
-  - task: PublishBuildArtifacts@1
-    inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      artifactName: 'drop'
-      publishLocation: 'Container'
