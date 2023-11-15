@@ -17,7 +17,6 @@ strategy:
     Python39:
       PYTHON_VERSION: '3.9'
   maxParallel: 3
-
 jobs:
 - job: RunTests
   displayName: 'Run Tests'
